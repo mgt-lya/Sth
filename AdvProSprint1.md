@@ -17,7 +17,7 @@
 <pre><code>
 IF68/
 ├── README.md # Descriptive file
-├── test2.cpp # Main code
+├── code.cpp # Main code
 ├── input.png # Input image
 └── output.png # Output image
 
@@ -35,12 +35,12 @@ OpenCV installed.</p>
 <ol start="2">
 <li>Compile source code</li>
 </ol>
-<pre class=" language-bash"><code class="prism  language-bash">g++ -std<span class="token operator">=</span>c++11 -o filter test2.cpp <span class="token variable"><span class="token variable">`</span>pkg-config --cflags --libs opencv4<span class="token variable">`</span></span>
+<pre class=" language-bash"><code class="prism  language-bash">g++ -std<span class="token operator">=</span>c++11 -o filter code.cpp <span class="token variable"><span class="token variable">`</span>pkg-config --cflags --libs opencv4<span class="token variable">`</span></span>
 </code></pre>
 <ol start="3">
 <li>Prepare image.</li>
 </ol>
-<p>Please Rename the input image as <code>input.png</code> and make sure <code>input.png</code> is at the same directory as <code>test2.cpp</code></p>
+<p>Please Rename the input image as <code>input.png</code> and make sure <code>input.png</code> is at the same directory as <code>code.cpp</code></p>
 <ol start="4">
 <li>
 <p>The code runs interactively with prompts:</p>
