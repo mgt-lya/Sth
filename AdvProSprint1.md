@@ -20,8 +20,8 @@
 <ol>
 <li>Various input image formats (e.g. PNG, JPG and similar formats) are accepted.</li>
 <li>Input and output images paths can be specified anywhere on the system.</li>
-<li>Output image name and format can be user-defined.</li>
 <li>If no output location is given, the processed image will be written to the project directory by default.</li>
+<li>Output image name and format can be user-defined.</li>
 </ol>
 <h2 id="structure">Structure</h2>
 <pre><code>IF68/
