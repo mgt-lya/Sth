@@ -14,14 +14,11 @@
 <p>-<a href="https://en.wikipedia.org/wiki/High-pass_filter">High Pass</a>: Opposite to Low pass, supressing low frequency components, and enhancing rapid transition regions.</p>
 <p>-<a href="https://de.wikipedia.org/wiki/Laplace-Filter">Laplace Filter</a>: Highlight rapid transition regions by second order derivative operator.</p>
 <h2 id="structure">Structure</h2>
-<pre><code>
-IF68/
+<pre><code>IF68/
 ├── README.md # Descriptive file
-├── code.cpp # Main code
-├── input.png # Input image
-└── output.png # Output image
-
+└── sprint1.cpp # Main code
 </code></pre>
+<p>Input and output image path can be specified later in prompt window during the run time.</p>
 <h2 id="prerequisite">Prerequisite</h2>
 <p>C++ 11 or above.<br>
 OpenCV installed.</p>
@@ -35,17 +32,17 @@ OpenCV installed.</p>
 <ol start="2">
 <li>Compile source code</li>
 </ol>
-<pre class=" language-bash"><code class="prism  language-bash">g++ -std<span class="token operator">=</span>c++11 -o filter code.cpp <span class="token variable"><span class="token variable">`</span>pkg-config --cflags --libs opencv4<span class="token variable">`</span></span>
+<pre class=" language-bash"><code class="prism  language-bash">g++ -std<span class="token operator">=</span>c++11 -o filter code.cpp <span class="token variable"><span class="token variable">`</span>pkg-config --cflags --libs opencv4<span class="token variable">`</span></span> -Wall -Wextra
 </code></pre>
 <ol start="3">
-<li>Prepare image.</li>
-</ol>
-<p>Please Rename the input image as <code>input.png</code> and make sure <code>input.png</code> is at the same directory as <code>code.cpp</code></p>
-<ol start="4">
 <li>
 <p>The code runs interactively with prompts:</p>
 <p>Run the code:</p>
 <pre class=" language-bash"><code class="prism  language-bash">./filter
+</code></pre>
+<p>Specify image input and output path:</p>
+<pre class=" language-bash"><code class="prism  language-bash">Enter input image path:<span class="token punctuation">(</span>e.g. E:/images/input.png<span class="token punctuation">)</span>
+Enter output image name/path <span class="token punctuation">(</span>e.g.  simply save as result.png or E:/images/result.png<span class="token punctuation">)</span>: 
 </code></pre>
 <p>Choose which filter to use:</p>
 <pre class=" language-bash"><code class="prism  language-bash">Enter filter <span class="token punctuation">(</span>gaussian / lowpass / highpass / laplace<span class="token punctuation">)</span>:
@@ -60,6 +57,15 @@ OpenCV installed.</p>
 <li>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</li>
 <li>Output image number will be “output.png” by default.</li>
 </ol>
+<h2 id="example-usage">Example usage</h2>
+<p>Basic Gaussian Blur with kernel size of 5</p>
+<pre class=" language-bash"><code class="prism  language-bash">$ ./filter
+Enter input image path: ./photo.jpg
+Enter output image name/path: ./blurred_photo.png
+Enter filter <span class="token punctuation">(</span>gaussian / lowpass / highpass / laplace<span class="token punctuation">)</span>: gaussian
+Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>: 5
+Saved filtered image to ./blurred_photo.png
+</code></pre>
 <h2 id="license">License</h2>
 <p>MIT License</p>
 
