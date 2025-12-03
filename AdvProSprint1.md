@@ -8,11 +8,20 @@
 <h2 id="description">Description</h2>
 <p>A lightweight and customizable image filtering tool built with C++ and OpenCV. It applies various spatial domain filters to process images efficiently.</p>
 <h2 id="feature">Feature</h2>
+<h3 id="multiple-spatial-filters">Multiple spatial filters</h3>
 <p>Currently there are 4 filters which all operate in spatial domain as this <a href="https://dsp.stackexchange.com/questions/74358/spatial-domain-vs-frequency-domain-filtering-of-an-image-which-one-is-better">StackExchange thread</a> suggested:</p>
-<p>-<a href="https://en.wikipedia.org/wiki/Gaussian_filter">Gaussian Blur</a>: Smoothing the image linearly by Gaussian kernal, effectively reduce the high frequency noise.</p>
-<p>-<a href="https://en.wikipedia.org/wiki/Low-pass_filter">Low Pass</a>: Blurred the image by supressing high frequency components (rapid transition regions, e.g. edges) and preserved low-frequency components(smooth regions, e.g. shades).</p>
-<p>-<a href="https://en.wikipedia.org/wiki/High-pass_filter">High Pass</a>: Opposite to Low pass, supressing low frequency components, and enhancing rapid transition regions.</p>
-<p>-<a href="https://de.wikipedia.org/wiki/Laplace-Filter">Laplace Filter</a>: Highlight rapid transition regions by second order derivative operator.</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_filter">Gaussian Blur</a>: Smoothing the image linearly by Gaussian kernal, effectively reduce the high frequency noise.</li>
+<li><a href="https://en.wikipedia.org/wiki/Low-pass_filter">Low Pass</a>: Blurred the image by supressing high frequency components (rapid transition regions, e.g. edges) and preserved low-frequency components(smooth regions, e.g. shades).</li>
+<li><a href="https://en.wikipedia.org/wiki/High-pass_filter">High Pass</a>: Opposite to Low pass, supressing low frequency components, and enhancing rapid transition regions.</li>
+<li><a href="https://de.wikipedia.org/wiki/Laplace-Filter">Laplace Filter</a>: Highlight rapid transition regions by second order derivative operator.</li>
+</ol>
+<h3 id="customizable-input--output">Customizable input &amp; output</h3>
+<ol>
+<li>Various input image formats are accepted .</li>
+<li>Input and output images paths can be specified anywhere on the system.</li>
+<li>Output image name and format can be user-defined.</li>
+</ol>
 <h2 id="structure">Structure</h2>
 <pre><code>IF68/
 ├── README.md # Descriptive file
