@@ -20,7 +20,6 @@
 <ol>
 <li>Various input image formats (e.g. PNG, JPG and similar formats) are accepted.</li>
 <li>Input and output images paths can be specified anywhere on the system.</li>
-<li>If no output location is given, the processed image will be written to the project directory by default.</li>
 <li>Output image name and format can be user-defined.</li>
 </ol>
 <h2 id="structure">Structure</h2>
@@ -51,17 +50,19 @@ OpenCV installed.</p>
 <ol start="3">
 <li>
 <p>The code runs interactively with prompts:</p>
-<p>Run the code:</p>
+<p>a. Run the code:</p>
 <pre class=" language-bash"><code class="prism  language-bash">./filter
 </code></pre>
-<p>Specify image input and output path:</p>
+<p>b. Choose an input image from any local path, and optionally specify an output path &amp; output file name</p>
 <pre class=" language-bash"><code class="prism  language-bash">Enter input image path:<span class="token punctuation">(</span>e.g. E:/images/input.png<span class="token punctuation">)</span>
 Enter output image name/path <span class="token punctuation">(</span>e.g.  simply save as result.png or E:/images/result.png<span class="token punctuation">)</span>: 
 </code></pre>
-<p>Choose which filter to use:</p>
+<h4 id="note">Note:</h4>
+<p>If no output location is given, the processed image will be written to the project directory by default.</p>
+<p>c. Choose which filter to use:</p>
 <pre class=" language-bash"><code class="prism  language-bash">Enter filter <span class="token punctuation">(</span>gaussian / lowpass / highpass / laplace<span class="token punctuation">)</span>:
 </code></pre>
-<p>Then specify the kernel size:</p>
+<p>d. Then specify the kernel size:</p>
 <pre class=" language-bash"><code class="prism  language-bash">Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>:
 </code></pre>
 </li>
@@ -72,14 +73,19 @@ Enter output image name/path <span class="token punctuation">(</span>e.g.  simpl
 <li>Output image number will be “output.png” by default.</li>
 </ol>
 <h2 id="example-usage">Example usage</h2>
-<p>Basic Gaussian Blur with kernel size of 5</p>
+<p>Basic Gaussian Blur with kernel size of 15:</p>
 <pre class=" language-bash"><code class="prism  language-bash">$ ./filter
 Enter input image path: ./photo.jpg
 Enter output image name/path: ./blurred_photo.png
 Enter filter <span class="token punctuation">(</span>gaussian / lowpass / highpass / laplace<span class="token punctuation">)</span>: gaussian
-Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>: 5
+Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>: 15
 Saved filtered image to ./blurred_photo.png
 </code></pre>
+<h3 id="result-visualization">Result visualization</h3>
+<p>Original image:<br>
+<img src="https://github.com/mgt-lya/Sth/blob/master/1406e670f6bf842d4d603c3d60306a7f.png" alt="enter image description here"></p>
+<p>Result image:<br>
+<img src="https://github.com/mgt-lya/Sth/blob/master/d3936590481f3ea5357317e92ae70df3.png" alt="enter image description here"></p>
 <h2 id="license">License</h2>
 <p>MIT License</p>
 
