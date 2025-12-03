@@ -4,7 +4,7 @@
 ---
 
 <h2 id="if68">IF68</h2>
-<p>The image filter project of group 68</p>
+<p>The image filter project of group 68.</p>
 <h2 id="description">Description</h2>
 <p>A lightweight and customizable image filtering tool built with C++ and OpenCV. It applies various spatial domain filters to process images efficiently.</p>
 <h2 id="feature">Feature</h2>
@@ -23,14 +23,14 @@ IF68/
 
 </code></pre>
 <h2 id="prerequisite">Prerequisite</h2>
-<p>** C++ 11 or above.</p>
-<p>** OpenCV installed.</p>
+<p>C++ 11 or above.<br>
+OpenCV installed.</p>
 <h2 id="utilization">Utilization</h2>
 <ol>
 <li>Clone the repository</li>
 </ol>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://gitlab.lrz.de/advprog2025/68
-<span class="token function">cd</span> image-filter-68
+<span class="token function">cd</span> if68
 </code></pre>
 <ol start="2">
 <li>Compile source code</li>
@@ -57,15 +57,9 @@ IF68/
 </ol>
 <p>Notes:</p>
 <ol>
-<li>
-<p>Laplace filter uses a fixed 3x3 kernel</p>
-</li>
-<li>
-<p>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</p>
-</li>
+<li>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</li>
+<li>Output image number will be “output.png” by default.</li>
 </ol>
-<h2 id="visuals">Visuals</h2>
-<p>To be filled</p>
 <h2 id="license">License</h2>
 <p>MIT License</p>
 
