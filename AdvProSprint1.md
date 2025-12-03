@@ -72,7 +72,7 @@ Enter output image name/path <span class="token punctuation">(</span>e.g.  simpl
 <li>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</li>
 <li>Output image number will be “output.png” by default.</li>
 </ol>
-<h2 id="example-usage">Example usage</h2>
+<h2 id="demo">Demo</h2>
 <p>Basic Gaussian Blur with kernel size of 15:</p>
 <pre class=" language-bash"><code class="prism  language-bash">$ ./filter
 Enter input image path: ./photo.jpg
@@ -81,11 +81,14 @@ Enter filter <span class="token punctuation">(</span>gaussian / lowpass / highpa
 Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>: 15
 Saved filtered image to ./blurred_photo.png
 </code></pre>
+<h3 id="prompt-window-illustration">Prompt window illustration</h3>
+<p><img src="https://github.com/mgt-lya/Sth/blob/master/5bb4ab14c9793defc12c3845d263c07a.png" alt="enter image description here"></p>
 <h3 id="result-visualization">Result visualization</h3>
 <p>Original image:<br>
 <img src="https://github.com/mgt-lya/Sth/blob/master/1406e670f6bf842d4d603c3d60306a7f.png" alt="enter image description here"></p>
 <p>Result image:<br>
-<img src="https://github.com/mgt-lya/Sth/blob/master/d3936590481f3ea5357317e92ae70df3.png" alt="enter image description here"></p>
+<img src="https://github.com/mgt-lya/Sth/blob/master/d3936590481f3ea5357317e92ae70df3.png" alt="enter image description here"><br>
+The result image is more smoother than the original image, as edges and reflections get blurred, which corresponds to the expected effect of Gaussian Blur filter.</p>
 <h2 id="license">License</h2>
 <p>MIT License</p>
 
