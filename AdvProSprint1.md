@@ -31,6 +31,10 @@
 <h2 id="prerequisite">Prerequisite</h2>
 <p>C++ 11 or above.<br>
 OpenCV installed.</p>
+<ul>
+<li>We use OpenCV 3.4.8, configured through system environment variables and Visual Studio.</li>
+<li>For stability reasons, we recommend running the project with a lower OpenCV version.  <a href="https://github.com/opencv/opencv%20/t%20_new">Official sources</a></li>
+</ul>
 <h2 id="utilization">Utilization</h2>
 <ol>
 <li>Clone the repository</li>
