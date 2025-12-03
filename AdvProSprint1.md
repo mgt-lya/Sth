@@ -7,19 +7,19 @@
 <p>The image filter project of group 68.</p>
 <h2 id="description">Description</h2>
 <p>A lightweight and customizable image filtering tool built with C++ and OpenCV. It applies various spatial domain filters to process images efficiently.</p>
-<h2 id="feature">Feature</h2>
+<h2 id="main-features">Main Features</h2>
 <h3 id="multiple-spatial-filters">Multiple spatial filters</h3>
-<p>Currently there are 4 filters which all operate in spatial domain as this <a href="https://dsp.stackexchange.com/questions/74358/spatial-domain-vs-frequency-domain-filtering-of-an-image-which-one-is-better">StackExchange thread</a> suggested:</p>
+<p>Currently there are 4 filters which all operate in spatial domain as this <a href="https://dsp.stackexchange.com/questions/74358/spatial-domain-vs-frequency-domain-filtering-of-an-image-which-one-is-better">StackExchange thread</a> suggested, which are:</p>
 <ol>
-<li><a href="https://en.wikipedia.org/wiki/Gaussian_filter">Gaussian Blur</a>: Smoothing the image linearly by Gaussian kernal, effectively reduce the high frequency noise.</li>
-<li><a href="https://en.wikipedia.org/wiki/Low-pass_filter">Low Pass</a>: Blurred the image by supressing high frequency components (rapid transition regions, e.g. edges) and preserved low-frequency components(smooth regions, e.g. shades).</li>
-<li><a href="https://en.wikipedia.org/wiki/High-pass_filter">High Pass</a>: Opposite to Low pass, supressing low frequency components, and enhancing rapid transition regions.</li>
-<li><a href="https://de.wikipedia.org/wiki/Laplace-Filter">Laplace Filter</a>: Highlight rapid transition regions by second order derivative operator.</li>
+<li><a href="https://en.wikipedia.org/wiki/Gaussian_filter">Gaussian Blur</a>: To smooth the image linearly by Gaussian kernal, effectively reduce the high frequency noise.</li>
+<li><a href="https://en.wikipedia.org/wiki/Low-pass_filter">Low Pass</a>: To blur the image by supressing high frequency components (rapid transition regions, e.g. edges) and preserved low-frequency components(smooth regions, e.g. shades).</li>
+<li><a href="https://en.wikipedia.org/wiki/High-pass_filter">High Pass</a>: Opposite to Low pass, to suppress low frequency components, and enhancing rapid transition regions.</li>
+<li><a href="https://de.wikipedia.org/wiki/Laplace-Filter">Laplace Filter</a>: To highlight rapid transition regions by second order derivative operator.</li>
 </ol>
 <h3 id="customizable-input--output">Customizable input &amp; output</h3>
 <ol>
 <li>Various input image formats (e.g. PNG, JPG and similar formats) are accepted.</li>
-<li>Input and output images paths can be specified anywhere on the system.</li>
+<li>Input and output image paths can be specified anywhere on the system.</li>
 <li>Output image name and format can be user-defined.</li>
 </ol>
 <h2 id="structure">Structure</h2>
@@ -33,7 +33,7 @@
 OpenCV installed.</p>
 <ul>
 <li>We use OpenCV 3.4.8, configured through system environment variables and Visual Studio.</li>
-<li>For stability reasons, we recommend running the project with a lower OpenCV version.  <a href="https://github.com/opencv/opencv%20/t%20_new">Official sources</a></li>
+<li>For stability reasons, we recommend running the project with a lower OpenCV version.  See <a href="https://github.com/opencv/opencv%20/t%20_new">official sources</a></li>
 </ul>
 <h2 id="utilization">Utilization</h2>
 <ol>
@@ -65,12 +65,9 @@ Enter output image name/path <span class="token punctuation">(</span>e.g.  simpl
 <p>d. Then specify the kernel size:</p>
 <pre class=" language-bash"><code class="prism  language-bash">Enter kernel size <span class="token punctuation">(</span>odd number like 3, 5, 9, 15<span class="token punctuation">)</span>:
 </code></pre>
+<h4 id="note-1">Note:</h4>
+<p>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</p>
 </li>
-</ol>
-<p>Notes:</p>
-<ol>
-<li>Larger kernel size leads to smoother output image; and smaller kernel size will highlights more details.</li>
-<li>Output image number will be “output.png” by default.</li>
 </ol>
 <h2 id="demo">Demo</h2>
 <p>Basic Gaussian Blur with kernel size of 15:</p>
